@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EsporteMania - Blog de Esportes</title>
+    <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+</script>
+
+    <header>
+        <h1>EsporteMania</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="basquete.html">Basquete</a></li>
+                <li><a href="corrida.html">Corrida</a></li>
+                <li><a href="beach-tennis.html">Beach Tennis</a></li>
+                <li><a href="volei.html">Vôlei</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>   
+
+    <main>
+    
+   <section class="featured-sports">
+    <div class="sport-card welcome-card">
+        <h2>Bem-vindo ao EsporteMania!</h2>
+        <p>Seu blog educativo criado para quem quer entender melhor o universo dos esportes! Aqui você encontra explicações simples e diretas sobre as regras de diferentes modalidades, desde as mais populares até as menos conhecidas. Ideal para iniciantes, curiosos e apaixonados por esporte que querem aprender e se informar..</p>
+        <p>Explore nossos artigos, dicas e muito mais!</p>
+</section>
+<section class="featured-sports">
+    <div class="sport-card">
+        <img src="images/basquete.png" alt="Basquete">
+        <h3>Basquete</h3>
+        <p>Descubra as regras e técnicas do basquete profissional.</p>
+        <a href="basquete.html" class="btn">Saiba mais</a>
+    </div>
+
+    <div class="sport-card">
+        <img src="images/corrida.png" alt="Corrida">
+        <h3>Corrida</h3>
+        <p>Aprenda sobre diferentes modalidades de corrida.</p>
+        <a href="corrida.html" class="btn">Saiba mais</a>
+    </div>
+
+    <div class="sport-card">
+        <img src="images/beachtennis.png" alt="Beach Tennis">
+        <h3>Beach Tennis</h3>
+        <p>Conheça este esporte que está conquistando as praias.</p>
+        <a href="beach-tennis.html" class="btn">Saiba mais</a>
+    </div>
+
+    <div class="sport-card">
+        <img src="images/volei.png" alt="Vôlei">
+        <h3>Vôlei</h3>
+        <p>Explore as técnicas e regras do vôlei.</p>
+        <a href="volei.html" class="btn">Saiba mais</a>
+    </div>
+</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EsporteMania. Todos os direitos reservados.</p>
+    </footer>
+
+<script>
+function createParticles() {
+    const container = document.createElement('div');
+    container.className = 'particles';
+    document.body.appendChild(container);
+
+    for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.width = Math.random() * 5 + 'px';
+        particle.style.height = particle.style.width;
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 20 + 's';
+        container.appendChild(particle);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', createParticles);
+</script>
+</body>
+</html>

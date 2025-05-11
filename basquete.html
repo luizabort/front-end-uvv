@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basquete - Regras e Fundamentos</title>
+    <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>EsporteMania</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="basquete.html">Basquete</a></li>
+                <li><a href="corrida.html">Corrida</a></li>
+                <li><a href="beach-tennis.html">Beach Tennis</a></li>
+                <li><a href="volei.html">Vôlei</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Basquete - Regras e Fundamentos</h2>
+        </section>
+        
+    <section class="sport-content">
+        <h3>Fundamentos do Basquete</h3>
+        <div class="sport-info">
+            <div class="fundamental">
+                <h4>Drible</h4>
+                <img src="image/drible baq.jpg">
+                <p>No basquete, o drible é o ato de quicar a bola com uma mão enquanto o jogador avança pela quadra. É uma habilidade fundamental para se deslocar com a posse de bola, proteger a bola de um defensor e desvencilhar-se de um marcador. Existem diferentes tipos de drible, como o drible baixo (para proteger a bola) e o drible alto (para avançar com velocidade), e variações como o drible entre as pernas ou o drible por trás das costas. </p>
+            </div>
+            <div class="fundamental">
+                <h4>Arremesso</h4>
+                <img src="image/aremessobasq.jpg">
+                <p>O arremesso é a ação de lançar a bola em direção à cesta. Existem várias técnicas, como o jump, bandeja e gancho.</p>
+            </div>
+            <div class="fundamental">
+                <h4>Passe</h4>
+                <img src="image/passebasq.jpg">
+                <p>O passe é a ação de transferir a bola para um companheiro de equipe. Os principais tipos são: peito, picado e por cima da cabeça.</p>
+            </div>
+        </div>
+
+        <h3>Regras Básicas</h3>
+        <ul class="rules-list">
+            <li>Uma partida tem 4 quartos de 10 minutos cada</li>
+            <li>Cada equipe tem 5 jogadores em quadra</li>
+            <li>Uma cesta pode valer 2 ou 3 pontos, dependendo da distância</li>
+            <li>Lance livre vale 1 ponto</li>
+            <li>Não é permitido andar com a bola sem driblar</li>
+        </ul>
+    </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EsporteMania. Todos os direitos reservados.</p>
+    </footer>
+
+<script>
+function createParticles() {
+    const container = document.createElement('div');
+    container.className = 'particles';
+    document.body.appendChild(container);
+
+    for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.width = Math.random() * 5 + 'px';
+        particle.style.height = particle.style.width;
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 20 + 's';
+        container.appendChild(particle);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', createParticles);
+</script>
+
+</body>
+</html>

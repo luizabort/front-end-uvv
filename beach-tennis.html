@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Tennis - O Esporte da Praia</title>
+    <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>EsporteMania</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="basquete.html">Basquete</a></li>
+                <li><a href="corrida.html">Corrida</a></li>
+                <li><a href="beach-tennis.html">Beach Tennis</a></li>
+                <li><a href="volei.html">Vôlei</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Beach Tennis - O Esporte da Praia</h2>
+        </section>
+        
+  <section class="sport-content">
+        <h3>Beach Tennis: O Esporte da Praia</h3>
+        <div class="sport-info">
+            <div class="info-block">
+                <h4>Como Jogar</h4>
+                <img src="image/comojogar beach.jpg">
+                <p>O beach tennis é jogado em duplas ou individual, em uma quadra de areia com rede alta. Os jogadores usam raquetes específicas e não podem deixar a bola tocar a areia.</p>
+            </div>
+            <div class="info-block">
+                <h4>Equipamentos</h4>
+                <img src="image/Equipamento beach.jpg">
+                    <p>Raquete específica de beach tennis</p>
+                    <p>Bolas de tênis despressurizadas</p>
+                    <p>Rede com altura de 1,70m</p>
+                    <p>Quadra de areia com medidas de 8x4m para duplas e 8x3m para simples</p>
+            </div>
+        </div>
+
+        <h3>Regras Básicas</h3>
+        <ul class="rules-list">
+            <li>A bola deve ser rebatida antes de tocar a areia</li>
+            <li>Saque deve ser feito por baixo</li>
+            <li>Sets são disputados até 6 games</li>
+            <li>Não há segundo saque</li>
+        </ul>
+    </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EsporteMania. Todos os direitos reservados.</p>
+    </footer>
+
+<script>
+function createParticles() {
+    const container = document.createElement('div');
+    container.className = 'particles';
+    document.body.appendChild(container);
+
+    for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.width = Math.random() * 5 + 'px';
+        particle.style.height = particle.style.width;
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 20 + 's';
+        container.appendChild(particle);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', createParticles);
+</script>
+
+</body>
+</html>

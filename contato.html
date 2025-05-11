@@ -1,0 +1,86 @@
+
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato - EsporteMania</title>
+        <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <h1>EsporteMania</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="basquete.html">Basquete</a></li>
+                    <li><a href="corrida.html">Corrida</a></li>
+                    <li><a href="beach-tennis.html">Beach Tennis</a></li>
+                    <li><a href="volei.html">Vôlei</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="contact-form">
+    <h2>Entre em contato</h2>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" placeholder="Apenas números">
+
+        <label for="assunto">Assunto:</label>
+        <select id="assunto" name="assunto" required>
+            <option value="">Selecione</option>
+            <option value="duvida">Dúvida</option>
+            <option value="sugestao">Sugestão</option>
+            <option value="elogio">Elogio</option>
+            <option value="outro">Outro</option>
+        </select>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Enviar</button>
+    </form>
+</section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 EsporteMania. Todos os direitos reservados.</p>
+        </footer>
+    
+<script>
+function createParticles() {
+    const container = document.createElement('div');
+    container.className = 'particles';
+    document.body.appendChild(container);
+
+    for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.width = Math.random() * 5 + 'px';
+        particle.style.height = particle.style.width;
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 20 + 's';
+        container.appendChild(particle);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', createParticles);
+</script>
+
+</body>
+    </html>
+    

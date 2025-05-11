@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vôlei - Técnicas e Regras</title>
+    <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>EsporteMania</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="basquete.html">Basquete</a></li>
+                <li><a href="corrida.html">Corrida</a></li>
+                <li><a href="beach-tennis.html">Beach Tennis</a></li>
+                <li><a href="volei.html">Vôlei</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Vôlei - Técnicas e Regras</h2>
+        </section>
+        
+    <section class="sport-content">
+        <h3>Fundamentos do Vôlei</h3>
+        <div class="sport-info">
+            <div class="fundamental">
+                <h4>Saque</h4>
+                <img src="image/saquevolei.jpg"
+                <p>Golpe inicial que coloca a bola em jogo. Pode ser por baixo, por cima ou em suspensão.</p>
+            </div>
+            <div class="fundamental">
+                <h4>Recepção</h4>
+                <img src="images/recepcaovol.jpg">
+                <p>Primeiro toque após o saque adversário, geralmente realizado com manchete.</p>
+            </div>
+            <div class="fundamental">
+                <h4>Levantamento</h4>
+                <img src="image/Levantamento.jpg">
+                <p>Segundo toque que prepara a bola para o ataque.</p>
+            </div>
+            <div class="fundamental">
+                <h4>Ataque</h4>
+                <img src="image/corteVolei.jpg">
+                <p>Golpe ofensivo para enviar a bola ao campo adversário, geralmente com força.</p>
+            </div>
+        </div>
+
+        <h3>Regras Principais</h3>
+        <ul class="rules-list">
+            <li>6 jogadores por equipe em quadra</li>
+            <li>3 toques máximos por equipe</li>
+            <li>Sets até 25 pontos (com diferença de 2)</li>
+            <li>Rodízio obrigatório</li>
+        </ul>
+    </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EsporteMania. Todos os direitos reservados.</p>
+    </footer>
+
+<script>
+function createParticles() {
+    const container = document.createElement('div');
+    container.className = 'particles';
+    document.body.appendChild(container);
+
+    for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.width = Math.random() * 5 + 'px';
+        particle.style.height = particle.style.width;
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 20 + 's';
+        container.appendChild(particle);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', createParticles);
+</script>
+
+</body>
+</html>
